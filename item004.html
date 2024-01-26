@@ -1,0 +1,188 @@
+<html lang="ja">
+
+<head>
+    <meta http-equiv="content-type" charset="utf-8">
+    <title>イエメン　アールマッカ -RKoffee-</title>
+    <link rel="stylesheet" href="css/item.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/javaSpinner.js"></script>
+
+</head>
+
+<body>
+    <header class="header js-header">
+        <div class="header-inner inner">
+            <!-- タイトル -->
+            <h1 class="header-title"><a href="index.html">RKoffee</a></h1>
+            <!-- メニューバー -->
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="index.html">TOP</a></li>
+                    <li class="header-nav-item current"><a class="header-nav-item-link" href="itemView.html">ITEM</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="about.html">ABOUT</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- カート部分 -->
+            <a href=""><img src="pic/カートのアイコン素材.svg" class="cartButton"></a>
+        </div>
+    </header>
+
+
+    <!-- メイン -->
+    <main id="main">
+        <div class="item">
+            <div class="itemDetail">
+
+                <div class="pic">
+                    <div class="mainvisual">
+                        <img src="itemList/item004.jpg" alt="写真1">
+                    </div>
+                    <ul class="thumbnail">
+                        <li><img src="itemList/item004.jpg" alt="写真1"></li>
+                        <li><img src="itemList/bag001.jpg" alt="写真2"></li>
+                        <li><img src="itemList/bag002.jpg" alt="写真3"></li>
+                        <li><img src="itemList/cup001.jpg" alt="写真4"></li>
+                        <li><img src="itemList/cup002.jpg" alt="写真5"></li>
+                    </ul>
+                </div>
+
+                <div class="detailSen">
+                    <p>イエメンのアールマッカ（Arabica）は、独自のコーヒーの品種であり、その起源は古代のアラビア半島にまで遡ります。イエメンは、コーヒーの栽培が最初に行われた地域の一つとして知られており、アールマッカはその伝統的な品種の一つです。
+                    </p>
+
+                    <p>イエメンのアールマッカは、非常に希少で特別なコーヒーであり、品質と風味の面で独自の特徴を持っています。イエメンのコーヒーは通常、ドライプロセス（天日乾燥）と呼ばれる方法で栽培され、豆が果肉のまま乾燥されます。このプロセスは、コーヒー豆に特有の風味と複雑さをもたらし、アールマッカの特徴的な味わいに寄与します。
+                    </p>
+
+                    <p>アールマッカのコーヒーは、一般的にはワイルドで芳香な香りと独特の風味を持っています。その風味プロファイルには、スパイシーなニュアンス、特にシナモンやクローブのような香り、または甘いフルーティーな要素が含まれることがあります。酸味は穏やかで、ボディは中程度から濃厚です。アールマッカは、通常はフルボディで味わい深く、コクのあるコーヒーとして評価されます。
+                    </p>
+
+                    <p>イエメンのアールマッカは、コーヒー愛好家やバリスタの間で高く評価されており、その独特な風味と歴史的な背景から、希少性と魅力を持っています。ただし、イエメンのコーヒーは生産量が限られているため、入手が困難な場合もあります。そのため、アールマッカを試す機会があれば、特別なコーヒー体験を楽しむことができるでしょう。
+                    </p>
+                </div>
+
+                <div class="detail">
+                    <h1>コーヒーの詳細情報</h1>
+
+                    <table class="detailTable">
+                        <tr>
+                            <th>【原産国】</th>
+                            <td>イエメン</td>
+                        </tr>
+                        <tr>
+                            <th>【産地】</th>
+                            <td>イエメン中央山脈バニマタール</td>
+                        </tr>
+                        <tr>
+                            <th>【農園名】</th>
+                            <td>小農家</td>
+                        </tr>
+                        <tr>
+                            <th>【品種】</th>
+                            <td>在来種</td>
+                        </tr>
+                        <tr>
+                            <th>【精製法】</th>
+                            <td>ナチュラル</td>
+                        </tr>
+                        <tr>
+                            <th>【標高】</th>
+                            <td>1000m以上</td>
+                        </tr>
+                        <tr>
+                            <th>【焙煎度】</th>
+                            <td>浅煎り</td>
+                        </tr>
+                        <tr>
+                            <th>【内容量】</th>
+                            <td>100g（ドリップパック：11g×5個）</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- 商品購入欄 -->
+            <div class="side">
+                <div class="itemBuy">
+                    <p class="natural">natural</p>
+                    <h1>イエメン　アールマッカ</h1>
+
+
+                    <table class="table">
+                        <tr>
+                            <th>販売価格</th>
+                            <td>¥1,300<span class="small">(税込)</span></td>
+                        </tr>
+                        <tr>
+                            <th>数量</th>
+                            <td>
+                                <label class="number-spinner-wrap">
+                                    <input type="number" step="1" value="1" min="1" max="10">
+                                    <span class="spinner spinner-down">-</span>
+                                    <span class="spinner spinner-up">+</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>豆の状態</th>
+                            <td>
+                                <select name="option1">
+                                    <option value="豆">豆</option>
+                                    <option value="細挽き">粉（細挽き）</option>
+                                    <option value="中挽き">粉（中挽き）</option>
+                                    <option value="粗挽き">粉（粗挽き）</option>
+                                    <option value="ドリップバック">ドリップバック（11g × 5個）</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>内容量</th>
+                            <td>100g (ドリップバック： 11g × 5個)</td>
+                        </tr>
+                    </table>
+
+                    <a class="button" href="">
+                        <img src="pic/cartButton.png">
+                        カートに入れる
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- フッター -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="about">
+                <h1>RCoffee</h1>
+                <p>
+                    私たちは、コーヒー初心者の方からコーヒー好きの方まで、多くの方に素敵なコーヒーライフをお届けます。<br>豊かな風味や繊細なニュアンスを持つシングルオリジンコーヒーから、バランスの取れたブレンドコーヒーまで、幅広いラインナップを取り揃えています。
+                </p>
+            </div>
+            <div class="footerItem">
+                <h1>ITEM</h1>
+                <ul>
+                    <li><a href="beans.html">コーヒー豆</a></li>
+                    <li><a href="goods.html">コーヒーグッズ</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1>MENU</h1>
+                <ul>
+                    <li><a href="shippingFee.html">送料・配送について</a></li>
+                    <li><a href="tokusho.html">特定商取引法に基づく表記</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="terms.html">利用規約</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copy">&copy2023 RKoffee Inc.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: black;
+    font-size: 1rem;
+    font-family: "Meiryo", "メイリオ", "MS Gothic", "ＭＳ ゴシック", sans-serif;
+    margin: 0;
+    background-color: #EEFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    color: blue;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.title {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+/*
+コンテンツ幅を設定する共通のクラス
+*/
+
+#main {
+    max-width: 1200px;
+    height: auto;
+    padding: 85 16 0 16;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------------
+ヘッダー
+--------------------------------------------------------------------------------- */
+
+.inner {
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: content-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header {
+    background-color: #6495ED;
+    transition: 0.3s;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.header-title a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+
+    flex: 1;
+}
+
+.header-nav {
+    margin-left: 50px;
+
+    flex: 3;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.header-nav-item-link {
+    display: block;
+    color: #fff;
+}
+
+/* カート部分 */
+.cartButton {
+    width: 40px;
+
+    flex: 1;
+}
+
+/* ヘッダーアニメーション */
+.header-nav-list * {
+    box-sizing: border-box;
+}
+
+.header-nav-list li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    padding: 0;
+}
+
+.header-nav-list a {
+    padding: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.header-nav-list a:before,
+.header-nav-list a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.header-nav-list a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: blue;
+}
+
+.header-nav-list a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.header-nav-list a:hover:before,
+.header-nav-list .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.header-nav-list a:hover:after,
+.header-nav-list .current a:after {
+    max-width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------
+メイン部分
+--------------------------------------------------------------------------------- */
+
+.item {
+    display: flex;
+}
+
+.itemDetail {
+    flex: 5;
+    margin-bottom: 30px;
+}
+
+.detailSen {
+    border-bottom: 1px solid lightgray;
+}
+
+.detail h1{
+    font-size: 18px;
+}
+
+.detailTable th {
+    text-align: left;
+    font-weight: normal;
+}
+
+.pic {
+    max-width: 1000px;
+}
+
+.thumbnail {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.thumbnail li {
+    width: 10%;
+    padding: 3px;
+}
+
+/* ------------------------------------------------------------------------------
+サイド部分 
+------------------------------------------------------------------------------*/
+.side {
+    flex: 3;
+    margin-left: 30px;
+}
+
+.itemBuy {
+    background-color: white;
+    max-width: 500px;
+    height: auto;
+    padding: 0 20;
+    padding-bottom: 20px;
+    border: solid 1.5px #DDD;
+}
+
+.itemBuy h1{
+    margin: 0;
+}
+
+.washed {
+    padding-top: 10px;
+    margin: 0;
+    color: #8EB8FF;
+}
+
+.natural {
+    padding-top: 10px;
+    margin: 0;
+    color: #0c0;
+}
+
+.blend {
+    padding-top: 10px;
+    margin: 0;
+    color: #963;
+}
+
+.small {
+    font-size: 10px;
+    color: #555;
+}
+
+.table {
+    margin-bottom: 10;
+}
+
+.table th{
+    padding-right: 30px;
+    font-weight: normal;
+    color: #555;
+}
+
+.table td{
+    font-weight: bold;
+}
+
+.button {
+    color: #fff;
+    background-color: #DDD;
+    padding: 10;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button img{
+    width: 25px;
+    vertical-align: middle;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+
+/** input/スピンボタンのラップ要素 **/
+.number-spinner-wrap {
+    position: relative;
+    display: block;
+    width: 150px !important;
+    height: 2rem;
+}
+
+/** デフォルトのスピンボタンを隠す **/
+.number-spinner-wrap input::-webkit-outer-spin-button,
+.number-spinner-wrap input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/** input要素 **/
+.number-spinner-wrap input {
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+}
+
+/** スピンボタン要素 **/
+.number-spinner-wrap .spinner {
+    position: absolute;
+    top: 50%;
+    width: 1.2rem;
+    transform: translate(0, -50%);
+    font-size: 1rem;
+    padding: 2px .5rem;
+    text-align: center;
+    background: lightgray;
+    cursor: pointer;
+    user-select: none;
+}
+
+/** 減算のスピンボタン要素 **/
+.number-spinner-wrap .spinner-down {
+    left: 2px;
+    border-right: 1px solid lightgray;
+}
+
+/** 加算のスピンボタン要素 **/
+.number-spinner-wrap .spinner-up {
+    right: 2px;
+    border-left: 1px solid lightgray;
+}
+
+/* --------------------------
+フッター
+----------------------------- */
+#footer {
+    height: auto;
+    background-color: black;
+  }
+  
+  #footer h1 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  
+  #footer p {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  #footer ul {
+    margin: 0 0 0 30;
+    padding: 0;
+  }
+  
+  #footer a,
+  #footer p {
+    color: #666;
+  }
+  
+  #footer a:hover {
+    color: black;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    background-color: #DEC8B1;
+    padding: 50 0;
+  }
+  
+  .about {
+    flex: 1;
+    height: auto;
+    margin-left: 20px;
+    ;
+  }
+  
+  .footerItem {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .footerMenu {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  #footer .copy {
+    text-align: center;
+    bottom: auto;
+    color: white;
+  }

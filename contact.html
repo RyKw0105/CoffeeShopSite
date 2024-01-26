@@ -1,0 +1,128 @@
+<html lang="ja">
+
+<head>
+    <meta http-equiv="content-type" charset="utf-8">
+    <title>お問い合わせ -RKoffe-</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="java.js"></script>
+
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header js-header">
+        <div class="header-inner inner">
+            <!-- タイトル -->
+            <h1 class="header-title"><a href="index.html">RKoffee</a></h1>
+            <!-- メニューバー -->
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item "><a class="header-nav-item-link" href="index.html">TOP</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="itemView.html">ITEM</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="about.html">ABOUT</a></li>
+                    <li class="header-nav-item current"><a class="header-nav-item-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- カート部分 -->
+            <a href=""><img src="pic/カートのアイコン素材.svg" class="cartButton"></a>
+        </div>
+    </header>
+
+
+    <!-- メイン -->
+    <main id="main">
+        <h1>お問い合わせ</h1>
+        <p class="desc">
+            基本3営業日以内に返信させていただきます。<br>
+            弊社より返信が無い場合、お客様のメール設定で受信拒否をされてしまっている可能性がございます。お手数ですがメール設定を変更の上、再度ご連絡ください。
+        </p>
+
+        <h2>商品に関するお問い合わせ</h2>
+        <ul>
+            <li>・注文済の方：注文番号をご記入ください。</li>
+            <li>・未注文の方：対象商品名をご記入ください。</li>
+        </ul>
+
+        <h2>企業さま</h2>
+        <ul>
+            <li>・場所や規模、ご希望の内容を具体的にご記入ください。</li>
+        </ul>
+
+        <h3>お問い合わせ後の流れ</h3>
+        <ul>
+            <li>1. 必要に応じて詳細のお打ち合わせ</li>
+            <li>2. 必要に応じてサンプル豆や必要機材などを送付</li>
+            <li>3. 実施</li>
+        </ul>
+
+        <form>
+            <table class="contactTable">
+                <tr>
+                    <th class="contactItem">名前</th>
+                    <td class="contactBody">
+                        <input type="text" name="名前" class="formText" placeholder="山田　太郎" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="contactItem">メールアドレス</th>
+                    <td class="contactBody">
+                        <input type="email" name="メール" class="formText" placeholder="test@gmail.com" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="contactItem">お問い合わせ件名</th>
+                    <td class="contactBody">
+                        <input type="text" name="件名" class="formText" placeholder="件名を入力してください。" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="contactItem">お問い合わせ内容</th>
+                    <td class="contactBody">
+                        <textarea id="message" name="お問い合わせ内容" class="formArea" placeholder="こちらにお問い合わせ内容を入力してください。"
+                            required></textarea>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <input class="contact-submit" type="submit" value="送信">
+    </main>
+
+    <!-- フッター -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="about">
+                <h1>RCoffee</h1>
+                <p>
+                    私たちは、コーヒー初心者の方からコーヒー好きの方まで、多くの方に素敵なコーヒーライフをお届けます。<br>豊かな風味や繊細なニュアンスを持つシングルオリジンコーヒーから、バランスの取れたブレンドコーヒーまで、幅広いラインナップを取り揃えています。
+                </p>
+            </div>
+            <div class="footerItem">
+                <h1>ITEM</h1>
+                <ul>
+                    <li><a href="beans.html">コーヒー豆</a></li>
+                    <li><a href="goods.html">コーヒーグッズ</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1>MENU</h1>
+                <ul>
+                    <li><a href="shippingFee.html">送料・配送について</a></li>
+                    <li><a href="tokusho.html">特定商取引法に基づく表記</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="terms.html">利用規約</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copy">&copy2023 RKoffee Inc.</p>
+    </footer>
+</body>
+
+</html>
